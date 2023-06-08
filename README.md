@@ -19,10 +19,16 @@ The project consists of several files, each with a specific function. Here's a d
 - **common_ports.rs**: In this file, the most common ports to be checked are defined. The MOST_COMMON_PORTS_100 constant contains a list of port numbers.
 
 ## Usage
+> 1 - Compiler
+To compile the program, you need to run the following command:
+```sh
+cargo build --release
+```
 
+> 2 - Run
 To run the program, you need to pass the target as a command-line argument. The target should be provided in the form of a domain name. For example:
 ```sh
-tricoder example.com
+./target/release/tricoder example.com
 ```
 
 The program will perform subdomain enumeration and check open ports for each found subdomain. The results will be displayed in the console.
