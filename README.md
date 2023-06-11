@@ -36,7 +36,7 @@ To run the program, you need to pass the target as a command-line argument. The 
 The program will perform subdomain enumeration and check open ports for each found subdomain. The results will be displayed in the console.
 Multithreading
 
-This project utilizes multithreading to improve performance. It uses the rayon library, which provides a convenient way to parallelize operations across multiple threads. The program utilizes a custom thread pool with 256 threads to distribute the workload efficiently.
+This project utilizes multithreading and async to improve performance. It uses the rayon library, which provides a convenient way to parallelize operations across multiple threads. The program utilizes a custom thread pool with 256 threads to distribute the workload efficiently.
 
 By leveraging multithreading, the port scanning process can be significantly accelerated, allowing for faster enumeration and checking of open ports on multiple subdomains simultaneously.
 Dependencies
